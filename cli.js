@@ -20,8 +20,8 @@ if (argv.h) {
 // We wil assign values and instantiate the variables at the same time to save space.
 
 const time_zone = moment.tz.guess() || argv.z;
-const lat = argv.n || argv.s * -1 //Need the *-1 since south is negative
-const longi = argv.e || argv.w * -1 //Same logic as for argv.s
+const lat = argv.n || argv.s * -1; //Need the *-1 since south is negative
+const longi = argv.e || argv.w * -1; //Same logic as for argv.s
 
 //We need to make the URL and the response
 
@@ -38,7 +38,7 @@ if (args.j) {
 	process.exit(0);
 }
 
-const days = args.d
+const days = args.d;
 
 if (days == 0) {
   console.log("today.")
