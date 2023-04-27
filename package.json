@@ -1,0 +1,32 @@
+{
+  "name": "assignment-2-hallocello",
+  "version": "1.0.0",
+  "description": "This is the package for assignment 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
+  },
+  "bin": {
+	"galosh.js": ".cli/js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a02-functions-Hallocello.git"
+  },
+  "keywords": [
+    "Assignment_02",
+    "functions"
+  ],
+  "author": "Hallocello",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a02-functions-Hallocello/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a02-functions-Hallocello#readme",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "moment-timezone": "^0.5.43",
+    "node-fetch": "^3.3.1"
+  }
+}
