@@ -27,22 +27,22 @@ const longi = argv.e || argv.w * -1; //Same logic as for argv.s
 
 const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' +lat
 	+ '&longitude=' +longi
-	+ '&daily=precipitation_hours&current_weather=true&timezone=' timezone);
+	+ '&daily=precipitation_hours&current_weather=true&timezone='+ time_zone);
 
 //Now store the data received
 const data = await response.json();
 
-const days = args.d;
+const days = argv.d;
 
 if (days == 0) {
-  console.log("today.");
+  console.log('today.');
 } else if (days > 1) {
-  console.log("in " + days + " days.");
+  console.log('in ' + days + ' days.');
 } else {
-  console.log("tomorrow.");
+  console.log('tomorrow.');
 }
 
-if (args.j) {
+if (argv.j) {
 	console.log(data);
 	process.exit(0);
 }
